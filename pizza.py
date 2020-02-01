@@ -29,7 +29,6 @@ def main():
         try:
 
             price = float(price)
-            print(type(radius))
             break
         except:
 
