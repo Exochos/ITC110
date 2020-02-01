@@ -15,7 +15,7 @@ def main():
     price = float(input("Enter the price of the pizza in cents: "))
 
     # area is equal to radius^2 * pi
-    area = m.pi * (diameter ** 2)
+    area = m.pi * (radius ** 2)
 
     # price / area and then round the value to 2 decimal points
     finalValue = round((price / area),2)
