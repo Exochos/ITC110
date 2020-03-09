@@ -1,17 +1,21 @@
 # mario.py
-# this program creates
+# Jeremy Ward
+# Make it so
+def spaces(x):
+    for i in range(x):
+        print(" ", end="")
+
+def hashes(x):
+    for i in range(x):
+        print("#", end="")
+
 def main():
-    y = input("Please enter the size of the pyramid you would like:  ")
-    y = int(y)
-    x = 0
 
-    for i in range(y):
-        for x in range(y):
-            print(" ", end = "")
-        
-
-##        print(" " * (y-1-i), end="")
-##      print("#" * (i+2), end="")
-##      print(" ")
+    height = int(input("Please Enter a height of your pyramid: "))
+    for i in range(height +1):
+        spaces(height)
+        hashes(i)
+        print("")
+        height = height - 1
 
 main()
